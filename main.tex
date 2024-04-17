@@ -18,9 +18,7 @@
 \DeclarePairedDelimiter\inner{\langle}{\rangle}
 \DeclareMathOperator{\GL}{GL}
 \DeclareMathOperator{\interior}{int}
-\DeclareMathOperator{\closure}{cl}
-\DeclareMathOperator{\aut}{Aut}
-\DeclareMathOperator{\len}{length}
+\DeclareMathOperator{\im}{Im}
 
 \setlist[enumerate, 1]{leftmargin=0pt, label=\textbf{\arabic*.}}
 
@@ -31,6 +29,16 @@
 \item Let \(G\) be a finite group in which every two non-identity elements are conjugate. Clearly if \(G\) is trivial then \(\abs{G}\leq2\), so suppose \(G\) is non-trivial and let \(a\) be a non-identity element of \(G\). Then since every two non-identity elements are conjugate the size of the conjugacy class of \(a\) is \(\abs{G}-1\). By the orbit--stabiliser theorem the size of this conjugacy class divides the order of \(G\), but the only way for \(\abs{G}-1\) to divide \(\abs{G}\) is if \(\abs{G}=2\). Hence \(\abs{G}\leq2\).
 
 \item Let \(G\) be a finite group that acts transitively on a set \(\Omega\) of size \(n\geq2\). Since \(G\) is transitive there is only one orbit so by the Cauchy--Frobenius lemma the average number of fixed points of elements in \(G\) is 1. The identity element of \(G\) has \(\abs\Omega\geq2\) fixed points, so for the average number of fixed points to be 1 there must at least one element of \(G\) with 0 fixed points.
+
+\item \begin{enumerate}
+
+\item Let \(G\) be a finite group and let \(p\) be the smallest prime divisor of \(\abs{G}\). Let \(H\) be a subgroup of index \(p\) in \(G\). Let \(\phi\colon G\to S_p\) be the action of \(G\) by left multiplication on left cosets of \(H\) in \(G\). By the first isomorphism theorem
+\[\frac{G}{\ker\phi}\cong\im\phi\leq S_p\]
+so \(\abs{G:\ker\phi}\) divides \(\abs{S_p}=p!\). Also, \(\frac G{\ker\phi}\leq G\) so the smallest prime divisor of \(\abs{G:\ker\phi}\) is at least \(p\). Note \(\abs{G:\ker\phi}\neq1\)  since \(\ker\phi\leq H\). Hence \(\abs{G:\ker\phi}=\abs{G:H}=p\) and so \(\abs{\ker\phi}=\abs{H}\).
+
+Since \(\ker\phi\leq H\) and \(\abs{\ker\phi}=\abs{H}\), it follows that \(H=\ker\phi\) and so \(H\) is normal.
+
+\end{enumerate}
 
 \end{enumerate}
 
