@@ -1,0 +1,37 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{xfrac}
+\usepackage{xcolor}
+\usepackage{bm}
+
+\newcommand{\tr}{^{\mathsf{T}}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\half}{\sfrac{1\!}2}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\inner{\langle}{\rangle}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\interior}{int}
+\DeclareMathOperator{\closure}{cl}
+\DeclareMathOperator{\aut}{Aut}
+\DeclareMathOperator{\len}{length}
+
+\setlist[enumerate, 1]{leftmargin=0pt, label=\textbf{\arabic*.}}
+
+\begin{document}
+
+\begin{enumerate}
+
+\item Let \(G\) be a finite group in which every two non-identity elements are conjugate. Clearly if \(G\) is trivial then \(\abs{G}\leq2\), so suppose \(G\) is non-trivial and let \(a\) be a non-identity element of \(G\). Then since every two non-identity elements are conjugate the size of the conjugacy class of \(a\) is \(\abs{G}-1\). By the orbit--stabiliser theorem the size of this conjugacy class divides the order of \(G\), but the only way for \(\abs{G}-1\) to divide \(\abs{G}\) is if \(\abs{G}=2\). Hence \(\abs{G}\leq2\).
+
+\item Let \(G\) be a finite group that acts transitively on a set \(\Omega\) of size \(n\geq2\). Since \(G\) is transitive there is only one orbit so by the Cauchy--Frobenius lemma the average number of fixed points of elements in \(G\) is 1. The identity element of \(G\) has \(\abs\Omega\geq2\) fixed points, so for the average number of fixed points to be 1 there must at least one element of \(G\) with 0 fixed points.
+
+\end{enumerate}
+
+\end{document}
