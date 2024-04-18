@@ -46,7 +46,42 @@ But \(\ker\phi\) is trivial so \(G\) is isomorphic to a subgroup of \(S_6\). But
 
 \item Let \(G\) be a finite group of order \(p^2q\) where \(p\) and \(q\) are distinct primes. By \(3(a)\) and Sylow theory we can assume \(p<q\). By the first Sylow theorem there are either \(1\), \(p\), or \(p^2\) conjugate Sylow \(q\)-subgroups. In the first case the unique Sylow \(q\)-subgroup is normal. By the third Sylow theorem the number of conjugates is equivalent to 1 modulo \(q\), and since \(p<q\) we can rule out the case with \(p\) conjugates. Suppose there are \(p^2\) conjugate Sylow \(q\)-subgroups. Since \(q\) is prime these intersect trivially and so there are \(p^2(q-1)\) elements of order \(q\) in \(G\). This leaves a maximum of \(p^2\) elements of order not equal to \(q\) and so there is only one Sylow \(p^2\)-subgroup which is hence normal. Thus there always exists a normal subgroup and so \(G\) is not simple.
 
-\item Clearly
+\item Let \(G\) be a finite group and let \(N\) be a normal subgroup of \(G\). Let \(P\) be a Sylow \(p\)-subgroup of \(G\). Note since \(N\) is normal \(PN\) is a subgroup of \(G\). Note also by Lagrange's theorem the order of \(P\cap N\) is a power of \(p\). Since
+\[\abs{PN}=\frac{\abs P\abs N}{\abs{P\cap N}}\]
+we have
+\[\abs{PN:P}=\abs{N:P\cap N}.\]
+Then since \(\abs{G:P}\) is coprime to \(p\) and \(\abs{G:P}=\abs{G:PN}\abs{PN:P}\) so too is \(\abs{N:P\cap N}=\abs{PN:P}\) coprime to \(p\). Thus \(\abs{P\cap N}\) is a power of \(p\) and \(\abs{N:P\cap N}\) is coprime to \(p\), so \(P\cap N\) is a Sylow \(p\)-subgroup of \(N\).
+
+\item Let \(G\) be a group with presentation \(\langle\,x,y\mid x^{-1}yxy^{-2},\,y^{-1}xyx^{-2}\,\rangle\). We have
+\begin{align*}
+&x^{-1}yxy^{-2}=1\\
+\implies\quad&x^{-1}y(y^{-1}xyx^{-2})xy^{-2}=1\\
+\implies\quad&yx^{-1}y^{-2}=1\\
+\implies\quad&x^{-1}=y
+\end{align*}
+which plugged into the original identities gives \(x=1\) and \(y=1\), so \(G\) is trivial.
+
+\item \begin{enumerate}
+
+\item
+
+\item
+
+\item
+
+\end{enumerate}
+
+\item \begin{enumerate}
+
+\item 
+
+\item
+
+\item
+
+\end{enumerate}
+
+\item
 
 \end{enumerate}
 
